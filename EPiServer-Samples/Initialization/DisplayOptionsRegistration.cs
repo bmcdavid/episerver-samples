@@ -5,7 +5,8 @@ using EPiServer.Web;
 
 namespace EPiServerSamples.Initialization
 {
-    [InitializableModule] // attribute needed before the module is loaded at startup
+    //[InitializableModule] // attribute needed before the module is loaded at startup
+    [ModuleDependency(typeof(EPiServer.Web.InitializationModule))] // required when setting display options
     public class DisplayOptionsRegistration : IInitializableModule
     {
         public void Initialize(InitializationEngine context)

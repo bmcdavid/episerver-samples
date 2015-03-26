@@ -133,7 +133,7 @@ namespace EPiServerSamples.Rendering
             {
                 firstLastClass = _FirstClass;
             }
-            else if (index == total + 1)
+            else if (index == total - 1)
             {
                 firstLastClass = _LastClass;
             }
